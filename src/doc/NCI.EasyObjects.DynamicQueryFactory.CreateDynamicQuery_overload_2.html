@@ -1,0 +1,88 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>DynamicQueryFactory.CreateDynamicQuery Method (EasyObject, String)</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">EasyObjects.NET Programmers Reference</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">DynamicQueryFactory.CreateDynamicQuery Method (EasyObject, String)</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p> Method for invoking a specified DynamicQuery service object. Reads service settings from the dynamicQuerySettings.config file. </p>
+      <div class="syntax">public static <a href="NCI.EasyObjects.DynamicQuery.html">DynamicQuery</a> CreateDynamicQuery(<br />   <a href="NCI.EasyObjects.EasyObject.html">EasyObject</a> <i>entity</i>,<br />   <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemStringClassTopic.asp">string</a> <i>instanceName</i><br />);</div>
+      <h4 class="dtH4">Parameters</h4>
+      <dl>
+        <dt>
+          <i>entity</i>
+        </dt>
+        <dd>A callback reference to an EasyObject</dd>
+        <dt>
+          <i>instanceName</i>
+        </dt>
+        <dd>configuration key for dynamic query provider</dd>
+      </dl>
+      <h4 class="dtH4">Return Value</h4>
+      <p>DynamicQuery</p>
+      <h4 class="dtH4">Exceptions</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Exception Type</th>
+            <th width="50%">Condition</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemConfigurationConfigurationExceptionClassTopic.asp">ConfigurationException</a>
+            </td>
+            <td width="50%">
+            <p><i>instanceName</i> is not defined in configuration.</p>
+            <p>- or -</p>
+            <p>An error exists in the configuration.</p>
+            <p>- or -</p>
+            <p>A error occured while reading the configuration.</p>        
+            </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemReflectionTargetInvocationExceptionClassTopic.asp">TargetInvocationException</a>
+            </td>
+            <td width="50%">
+            <p>The constructor being called throws an exception.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="dtH4">Example</h4>
+      <p>
+            <pre class="code">DynamicQuery query = DynamicQueryFactory.CreateDynamicQuery("Oracle");
+</pre>
+            </p>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="NCI.EasyObjects.DynamicQueryFactory.html">DynamicQueryFactory Class</a> | <a href="NCI.EasyObjects.html">NCI.EasyObjects Namespace</a> | <a href="NCI.EasyObjects.DynamicQueryFactory.CreateDynamicQuery_overloads.html">DynamicQueryFactory.CreateDynamicQuery Overload List</a></p>
+      <hr />
+      <div id="footer">
+        <p>
+          <a>Copyright (c) 2005 Noonan Consulting Inc. All rights reserved.</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

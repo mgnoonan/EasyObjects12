@@ -1,0 +1,32 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>EasyObject.LoadFromSql Method (String, ListDictionary)</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">EasyObjects.NET Programmers Reference</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">EasyObject.LoadFromSql Method (String, ListDictionary)</h1>
+      </div>
+    </div>
+    <div id="nstext">
+            <p>Load the EasyObject with the results from a SQL query or stored procedure.</p>
+            <div class="syntax">protected <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemBooleanClassTopic.asp">bool</a> LoadFromSql(<br />   <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemStringClassTopic.asp">string</a> <i>sp</i>,<br />   <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemCollectionsSpecializedListDictionaryClassTopic.asp">ListDictionary</a> <i>parameters</i><br />);</div><h4 class="dtH4">Parameters</h4><dl><dt><i>sp</i></dt><dd>The name of the stored procedure to execute</dd><dt><i>parameters</i></dt><dd>The ListDictionary collection of parameters to send to the stored procedure</dd></dl><h4 class="dtH4">Return Value</h4><p>A boolean value indicating success or failure</p><h4 class="dtH4">Remarks</h4>
+            <p> The internal DataTable is loaded with any results returned from the stored procedure or query, but the columns may or may not line up with the EasyObject's Schema class. There is no restriction on the type or number of columns returned in the query. </p>
+            <p> To see if any errors occurred from the database, see <a href="NCI.EasyObjects.EasyObject.ErrorMessage.html">ErrorMessage</a>. </p>
+            <h4 class="dtH4">See Also</h4><p><a href="NCI.EasyObjects.EasyObject.html">EasyObject Class</a> | <a href="NCI.EasyObjects.html">NCI.EasyObjects Namespace</a> | <a href="NCI.EasyObjects.EasyObject.LoadFromSql_overloads.html">EasyObject.LoadFromSql Overload List</a></p><hr /><div id="footer"><p><a>Copyright (c) 2005 Noonan Consulting Inc. All rights reserved.</a></p><p></p></div></div>
+  </body>
+</html>

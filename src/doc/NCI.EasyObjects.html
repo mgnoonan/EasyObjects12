@@ -1,0 +1,172 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>NCI.EasyObjects</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">EasyObjects.NET Programmers Reference</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">NCI.EasyObjects Namespace</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>The primary classes for the EasyObjects.NET architecture.</p>
+      <p>
+        <a href="NCI.EasyObjectsHierarchy.html">Namespace hierarchy</a>
+      </p>
+      <h3 class="dtH3">Classes</h3>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Class</th>
+            <th width="50%">Description</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.AggregateParameter.html">AggregateParameter</a>
+            </td>
+            <td width="50%"> This class is dynamcially created when you add an AggregateParameter to your EasyObject's <a href="NCI.EasyObjects.DynamicQuery.html">DynamicQuery</a> (See the EasyObject.Query). </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.DynamicDatabaseFactory.html">DynamicDatabaseFactory</a>
+            </td>
+            <td width="50%"> Creates dynamic connection credentials to a database with information provided at runtime. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.DynamicQuery.html">DynamicQuery</a>
+            </td>
+            <td width="50%"> DynamicQuery allows you to build provider independent dynamic queries against the database from outside your data layer. All selection criteria are passed in via Parameters in order to prevent sql injection techniques often attempted by hackers. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.DynamicQueryConfigurationView.html">DynamicQueryConfigurationView</a>
+            </td>
+            <td width="50%">
+            <p>Represents a view for navigating the <a href="NCI.EasyObjects.Configuration.DynamicQuerySettings.html">DynamicQuerySettings</a> configuration data.</p>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.DynamicQueryFactory.html">DynamicQueryFactory</a>
+            </td>
+            <td width="50%"> Contains factory methods for creating DynamicQuery objects </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.DynamicQueryProviderFactory.html">DynamicQueryProviderFactory</a>
+            </td>
+            <td width="50%"> Represents a factory pattern which generates a provider-specific <a href="NCI.EasyObjects.DynamicQuery.html">DynamicQuery</a> object from configuration settings. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.EasyObject.html">EasyObject</a>
+            </td>
+            <td width="50%"> Provides the base functionality for an EasyObject. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.Schema.html">Schema</a>
+            </td>
+            <td width="50%"> Represents a database Schema for an EasyObject. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.SchemaItem.html">SchemaItem</a>
+            </td>
+            <td width="50%"> A representation of meta data about the columns in a database. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.TransactionManager.html">TransactionManager</a>
+            </td>
+            <td width="50%">
+            <b>TransactionManager</b> is used to seemlessly enroll an EasyObject into a transaction. <b>TransactionManager</b> uses ADO.NET transactions and therefore is not a distributed transaction as you would get with COM+. You only have to use <b>TransactionManager</b> if two or more EasyObjects need to be saved as a transaction. The EasyObject.Save method is already protected by a transaction. <seealso cref="M:NCI.EasyObjects.EasyObject.Save(System.Data.CommandType)"></seealso>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.ValueParameter.html">ValueParameter</a>
+            </td>
+            <td width="50%"> Represents a database parameter and value. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.WhereParameter.html">WhereParameter</a>
+            </td>
+            <td width="50%"> This class is dynamically created when you add a <b>WhereParameter</b> to your EasyObject's <a href="NCI.EasyObjects.DynamicQuery.html">DynamicQuery</a> (See the EasyObject.Query). <seealso cref="P:NCI.EasyObjects.EasyObject.Query"></seealso>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <h3 class="dtH3">Enumerations</h3>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Enumeration</th>
+            <th width="50%">Description</th>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.AggregateParameter.Func.html">AggregateParameter.Func</a>
+            </td>
+            <td width="50%"> The aggregate function used by Aggregate.Function </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.DBProviderType.html">DBProviderType</a>
+            </td>
+            <td width="50%"> Enumeration indicating which type of database to create a connection to </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.SchemaItemJustify.html">SchemaItemJustify</a>
+            </td>
+            <td width="50%"> An enumeration for justifying string fields in the database. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.WhereParameter.Conj.html">WhereParameter.Conj</a>
+            </td>
+            <td width="50%"> The conjunction used between <a href="NCI.EasyObjects.WhereParameter.html">WhereParameter</a>s. </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.WhereParameter.Dir.html">WhereParameter.Dir</a>
+            </td>
+            <td width="50%"> The direction used by DynamicQuery.AddOrderBy <seealso cref="M:NCI.EasyObjects.DynamicQuery.AddOrderBy(System.String,NCI.EasyObjects.WhereParameter.Dir)"></seealso>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td width="50%">
+              <a href="NCI.EasyObjects.WhereParameter.Operand.html">WhereParameter.Operand</a>
+            </td>
+            <td width="50%"> The type of comparison this parameter should use </td>
+          </tr>
+        </table>
+      </div>
+      <hr />
+      <div id="footer">
+        <p>
+          <a>Copyright (c) 2005 Noonan Consulting Inc. All rights reserved.</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>EasyObject.ToXml Method (XmlWriteMode)</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">EasyObjects.NET Programmers Reference</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">EasyObject.ToXml Method (XmlWriteMode)</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p> This method will allow you to save the contents of the EasyObject to XML. You can load this data into another EasyObject of the same type via <a href="NCI.EasyObjects.EasyObject.FromXml_overload_2.html">FromXml</a>. Call <a href="NCI.EasyObjects.EasyObject.GetChanges_overload_2.html">GetChanges</a> before calling ToXml to serialize only the modified data. </p>
+      <div class="syntax">public virtual <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemStringClassTopic.asp">string</a> ToXml(<br />   <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemDataXmlWriteModeClassTopic.asp">XmlWriteMode</a> <i>mode</i><br />);</div>
+      <h4 class="dtH4">Parameters</h4>
+      <dl>
+        <dt>
+          <i>mode</i>
+        </dt>
+        <dd>
+          <span class="missing">Missing &lt;param&gt; documentation for mode</span>
+        </dd>
+      </dl>
+      <h4 class="dtH4">Return Value</h4>
+      <p>A string containing the XML</p>
+      <h4 class="dtH4">Example</h4>
+      <p> VB.NET <pre class="code">Dim emps As New Employees
+emps.Query.Load()              ' emps.RowCount = 200
+emps.FirstName = "Noonan"      ' Change first row
+emps.GetChanges()              ' emps.RowCount now = 1 
+
+' Now reload that single record into a new Employees object and Save it
+Dim xml As String = emps.ToXml()
+Dim empsClone As New Employees
+empsClone.FromXml(xml)
+empsClone.Save()
+</pre> C# <pre class="code">Employees emps = new Employees();
+emps.LoadAll();                // emps.RowCount = 200
+emps.LastName = "Noonan";      // Change first row
+emps.GetChanges();             // emps.RowCount now = 1 
+
+// Now reload that single record into a new Employees object and Save it
+string str = emps.ToXml();
+Employees empsClone = new Employees();
+empsClone.FromXml(str);
+empsClone.Save();
+</pre> 
+            </p>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="NCI.EasyObjects.EasyObject.html">EasyObject Class</a> | <a href="NCI.EasyObjects.html">NCI.EasyObjects Namespace</a> | <a href="NCI.EasyObjects.EasyObject.ToXml_overloads.html">EasyObject.ToXml Overload List</a></p>
+      <hr />
+      <div id="footer">
+        <p>
+          <a>Copyright (c) 2005 Noonan Consulting Inc. All rights reserved.</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

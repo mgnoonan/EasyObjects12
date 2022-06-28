@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InitializeTestsVB", "InitializeTestsVB.vbproj", "{DBD9021E-C5E9-4516-9579-3F45DF7F90A3}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Tests", "..\VB\Tests.vbproj", "{2CBAB4CE-25A5-4E3E-8D1B-46EDB6C41C1C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyObjects", "..\..\EasyObjects.csproj", "{EA5A68DB-0F56-49B6-900D-586097FF6372}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{DBD9021E-C5E9-4516-9579-3F45DF7F90A3}.Debug.ActiveCfg = Debug|.NET
+		{DBD9021E-C5E9-4516-9579-3F45DF7F90A3}.Debug.Build.0 = Debug|.NET
+		{DBD9021E-C5E9-4516-9579-3F45DF7F90A3}.Release.ActiveCfg = Release|.NET
+		{DBD9021E-C5E9-4516-9579-3F45DF7F90A3}.Release.Build.0 = Release|.NET
+		{2CBAB4CE-25A5-4E3E-8D1B-46EDB6C41C1C}.Debug.ActiveCfg = Debug|.NET
+		{2CBAB4CE-25A5-4E3E-8D1B-46EDB6C41C1C}.Debug.Build.0 = Debug|.NET
+		{2CBAB4CE-25A5-4E3E-8D1B-46EDB6C41C1C}.Release.ActiveCfg = Release|.NET
+		{2CBAB4CE-25A5-4E3E-8D1B-46EDB6C41C1C}.Release.Build.0 = Release|.NET
+		{EA5A68DB-0F56-49B6-900D-586097FF6372}.Debug.ActiveCfg = Debug|.NET
+		{EA5A68DB-0F56-49B6-900D-586097FF6372}.Debug.Build.0 = Debug|.NET
+		{EA5A68DB-0F56-49B6-900D-586097FF6372}.Release.ActiveCfg = Release|.NET
+		{EA5A68DB-0F56-49B6-900D-586097FF6372}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

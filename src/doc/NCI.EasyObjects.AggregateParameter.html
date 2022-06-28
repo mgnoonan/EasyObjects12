@@ -1,0 +1,127 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>AggregateParameter Class</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">EasyObjects.NET Programmers Reference</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">AggregateParameter Class</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p> This class is dynamcially created when you add an AggregateParameter to your EasyObject's <a href="NCI.EasyObjects.DynamicQuery.html">DynamicQuery</a> (See the EasyObject.Query). </p>
+      <p>For a list of all members of this type, see <a href="NCI.EasyObjects.AggregateParameterMembers.html">AggregateParameter Members</a>.</p>
+      <p>
+        <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassTopic.asp">System.Object</a>
+        <br />   <a href="NCI.EasyObjects.ValueParameter.html">NCI.EasyObjects.ValueParameter</a><br />      <b>NCI.EasyObjects.AggregateParameter</b></p>
+      <div class="syntax">
+        <div>public class AggregateParameter<b> : <a href="NCI.EasyObjects.ValueParameter.html">ValueParameter</a></b></div>
+      </div>
+      <H4 class="dtH4">Thread Safety</H4>
+      <P>Public static (<b>Shared</b> in Visual Basic) members of this type are 
+				safe for multithreaded operations. Instance members are <b>not</b> guaranteed to be 
+				thread-safe.</P>
+      <h4 class="dtH4">Remarks</h4>
+      <p> Aggregate and GROUP BY Feature Support by DBMS: <pre class="code">                MS    
+Feature         SQL   Oracle
+--------------- ----- ------
+Avg              Y     Y
+Count            Y     Y
+Max              Y     Y
+Min              Y     Y
+Sum              Y     Y
+StdDev           Y    (1)
+Var              Y     Y
+Aggregate in
+  ORDER BY       Y     Y
+  GROUP BY       -     Y
+WITH ROLLUP      Y     Y
+COUNT(DISTINCT)  Y     Y
+
+Notes:
+  (1) - Uses TRUNC(STDDEV(column),10) to avoid overflow errors
+  
+</pre> This will be the extent of your use of the AggregateParameter class, this class is mostly used by the EasyObject architecture, not the programmer. <pre class="code">prds  = new Products();
+
+// To include a COUNT(*) with NULLs included
+prds.Query.CountAll = true;
+prds.Query.CountAllAlias = "Product Count";
+
+// To exclude NULLs in the COUNT for a column
+prds.Aggregate.UnitsInStock.Function = AggregateParameter.Func.Count;
+prds.Aggregate.UnitsInStock.Alias = "With Stock";
+
+// To have two aggregates for the same column, use a tearoff
+AggregateParameter ap = prds.Aggregate.TearOff.UnitsInStock;
+ap.Function = AggregateParameter.Func.Sum;
+ap.Alias = "Total Units";
+
+prds.Aggregate.ReorderLevel.Function = AggregateParameter.Func.Avg;
+prds.Aggregate.ReorderLevel.Alias = "Avg Reorder";
+
+prds.Aggregate.UnitPrice.Function = AggregateParameter.Func.Min;
+prds.Aggregate.UnitPrice.Alias = "Min Price";
+
+ap = prds.Aggregate.TearOff.UnitPrice;
+ap.Function = AggregateParameter.Func.Max;
+ap.Alias = "Max Price";
+
+// If you have no aggregates or AddResultColumns,
+// Then the query defaults to SELECT *
+// If you have an aggregate and no AddResultColumns,
+// Then only aggregates are reurned in the query.
+prds.Query.AddResultColumn(Products.ColumnNames.CategoryID);
+prds.Query.AddResultColumn(Products.ColumnNames.Discontinued);
+
+// If you have an Aggregate, ANSI SQL requires an AddGroupBy
+// for each AddResultColumn. Check your DBMS docs.
+prds.Query.AddGroupBy(Products.ColumnNames.CategoryID);
+prds.Query.AddGroupBy(Products.ColumnNames.Discontinued);
+
+prds.Query.AddOrderBy(Products.ColumnNames.Discontinued, WhereParameter.Dir.ASC);
+
+// You can use aggregates in AddOrderBy by
+// referencing either the EasyObject AggregateParameter or a tearoff
+// You must create the aggregate before using it here.
+prds.Query.AddOrderBy(prds.Aggregate.UnitsInStock, WhereParameter.Dir.DESC);
+
+// Load it.
+prds.Query.Load();
+</pre>
+            </p>
+      <h4 class="dtH4">Requirements</h4>
+      <p>
+        <b>Namespace: </b>
+        <a href="NCI.EasyObjects.html">NCI.EasyObjects</a>
+      </p>
+      <p>
+        <b>Assembly: </b>NCI.EasyObjects (in NCI.EasyObjects.dll)
+					</p>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="NCI.EasyObjects.AggregateParameterMembers.html">AggregateParameter Members</a> | <a href="NCI.EasyObjects.html">NCI.EasyObjects Namespace</a></p>
+      <hr />
+      <div id="footer">
+        <p>
+          <a>Copyright (c) 2005 Noonan Consulting Inc. All rights reserved.</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

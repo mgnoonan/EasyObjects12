@@ -1,0 +1,190 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>SqlServerDynamicQuery Members</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">EasyObjects.NET Programmers Reference</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">SqlServerDynamicQuery Members
+					</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>
+        <a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.html">SqlServerDynamicQuery overview</a>
+      </p>
+      <h4 class="dtH4">Public Instance Constructors</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr VALIGN="top">
+            <td width="50%">
+              <img src="pubmethod.gif" />
+              <a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQueryConstructor.html">SqlServerDynamicQuery</a>
+            </td>
+            <td width="50%">Overloaded. Initializes a new instance of the SqlServerDynamicQuery class.</td>
+          </tr>
+        </table>
+      </div>
+      <h4 class="dtH4">Public Instance Properties</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img>ConfigurationName (inherited from <b>Microsoft.Practices.EnterpriseLibrary.Configuration.ConfigurationProvider</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.CountAll.html">CountAll</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> If true, add a COUNT(*) Aggregate to the selected columns list. <blockquote class="dtBlock"><b>Note</b>   This may not be support for all database providers</blockquote>
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.CountAllAlias.html">CountAllAlias</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> If CountAll is set to true, use this to add a user-friendly column name. <blockquote class="dtBlock"><b>Note</b>   This may not be support for all database providers</blockquote>
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.Distinct.html">Distinct</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Adds the DISTINCT modifier to the SELECT clause <blockquote class="dtBlock"><b>Note</b>   This may not be support for all database providers</blockquote>
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.Entity.html">Entity</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> An internal callback reference to the EasyObject. There is no need to use this externally. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.LastQuery.html">LastQuery</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Contains the Query string from your last call to Query.Load(), this is useful for debugging purposes. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.TopN.html">TopN</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Adds the TOPN modifier to the SELECT clause <blockquote class="dtBlock"><b>Note</b>   This may not be support for all database providers</blockquote>
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.WithRollup.html">WithRollup</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> If true, add WITH ROLLUP to the GROUP BY clause. <blockquote class="dtBlock"><b>Note</b>   This may not be support for all database providers</blockquote>
+            </td></tr></table>
+      </div>
+      <h4 class="dtH4">Public Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddAggregateParameter.html">AddAggregateParameter</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Adds the AggregateParameter to the internal ArrayList. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddConjunction.html">AddConjunction</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> A Query has a default conjunction between WHERE parameters, this method lets you intermix those and alternate between AND/OR. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.AddGroupBy_overload_1.html">AddGroupBy</a></td><td width="50%">Overloaded.  Adds a GROUP BY parameter to the query </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddGroupBy_overloads.html">AddGroupBy</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">Overloaded.  Adds a GROUP BY clause to the query. If you want to order the data by two columns you will need to call this method twice. If you call AddGroupBy, ANSI SQL requires an AddGroupBy for each AddResultColumn that is not an aggregate. Check your DBMS docs. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddGroupByFormat.html">AddGroupByFormat</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Adds a GROUP BY clause to the query using the FieldName. The field is formatted using the current data provider's <a href="NCI.EasyObjects.DynamicQuery.FieldFormat.html">FieldFormat</a>. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddInsertColumn_overloads.html">AddInsertColumn</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">Overloaded.  Adds a column and column value parameter to the INSERT query </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddInsertColumnWithValue.html">AddInsertColumnWithValue</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> The default result set for Query.Load is all of the columns in your Table or View. Once you call AddResultColumn this changes to only the columns you have added via this method. For instance, if you call AddResultColumn twice then only two columns will be returned in your result set. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.AddOrderBy_overloads.html">AddOrderBy</a></td><td width="50%">Overloaded.  Adds an aggregate parameter to the ORDER BY clause of the query </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddOrderBy_overloads.html">AddOrderBy</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">Overloaded.  Adds an ORDER BY clause to the query. If you want to order the data by two columns you will need to call this method twice. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddOrderByFormat_overloads.html">AddOrderByFormat</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">Overloaded.  Adds an ORDER BY clause to the query. The field is formatted using the <a href="NCI.EasyObjects.DynamicQuery.FieldFormat.html">FieldFormat</a>. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.AddResultColumn_overload_1.html">AddResultColumn</a></td><td width="50%">Overloaded.  Adds a field to the SELECT clause of the query </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddResultColumn_overload_1.html">AddResultColumn</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">Overloaded.  The default result set for Query.Load is all of the columns in your Table or View. Once you call AddResultColumn this changes to only the columns you have added via this method. For instance, if you call AddResultColumn twice then only two columns will be returned in your result set. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddResultColumnFormat.html">AddResultColumnFormat</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Adds a provider-specific formatted column name to the SELECT statement </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddUpdateColumn.html">AddUpdateColumn</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> The default result set for Query.Load is all of the columns in your Table or View. Once you call AddResultColumn this changes to only the columns you have added via this method. For instance, if you call AddResultColumn twice then only two columns will be returned in your result set. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddUpdateColumnWithValue.html">AddUpdateColumnWithValue</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> The default result set for Query.Load is all of the columns in your Table or View. Once you call AddResultColumn this changes to only the columns you have added via this method. For instance, if you call AddResultColumn twice then only two columns will be returned in your result set. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.AddWhereParameter.html">AddWhereParameter</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Adds the WhereParameter to the internal ArrayList. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.ClearAll.html">ClearAll</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Clears all the result columns and parameters from the current instance </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.CloseParenthesis.html">CloseParenthesis</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used for advanced queries </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassEqualsTopic.asp">Equals</a> (inherited from <b>Object</b>)</td><td width="50%">
+        Determines whether the specified <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassTopic.asp">Object</a> is equal to the current <b>Object</b>.
+      </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.FlushAggregateParameters.html">FlushAggregateParameters</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Clears the internal ArrayList of AggregateParameters </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.FlushWhereParameters.html">FlushWhereParameters</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Clears the internal ArrayList of WhereParameters </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.GetDeleteCommandWrapper_overloads.html">GetDeleteCommandWrapper</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">Overloaded.  Builds the inline SQL command for a DELETE </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassGetHashCodeTopic.asp">GetHashCode</a> (inherited from <b>Object</b>)</td><td width="50%">
+        Serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.
+      </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.GetInsertCommandWrapper_overloads.html">GetInsertCommandWrapper</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">Overloaded.  Builds the inline SQL command for an INSERT </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassGetTypeTopic.asp">GetType</a> (inherited from <b>Object</b>)</td><td width="50%">
+        Gets the <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemTypeClassTopic.asp">Type</a> of the current instance.
+      </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.GetUpdateCommandWrapper_overloads.html">GetUpdateCommandWrapper</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">Overloaded.  Builds the inline SQL command for a UPDATE </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.Initialize.html">Initialize</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">
+            Initializes a new instance of the <a href="NCI.EasyObjects.DynamicQuery.html">DynamicQuery</a> class with the specified <a href="NCI.EasyObjects.Configuration.DatabaseTypeData.html">DatabaseTypeData</a> and <a href="NCI.EasyObjects.DynamicQueryConfigurationView.html">DynamicQueryConfigurationView</a>.
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.Insert_overloads.html">Insert</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">Overloaded.  Execute the INSERT query. The default conjunction between the WHERE parameters is "AND". </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.InsertValuesClear.html">InsertValuesClear</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Calling this will clear all values from the UPDATE statement. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.Load_overloads.html">Load</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">Overloaded.  Execute the Query and loads your BusinessEntity. The default conjunction between the WHERE parameters is "AND" </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.OpenParenthesis.html">OpenParenthesis</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used for advanced queries </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.ResultColumnsClear.html">ResultColumnsClear</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Calling this will set the result columns back to "all". </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassToStringTopic.asp">ToString</a> (inherited from <b>Object</b>)</td><td width="50%">
+        Returns a <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemStringClassTopic.asp">String</a> that represents the current <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassTopic.asp">Object</a>.
+      </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.Update_overloads.html">Update</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">Overloaded.  Execute the Update query. The default conjunction between the WHERE parameters is "AND". </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="NCI.EasyObjects.DynamicQuery.UpdateValuesClear.html">UpdateValuesClear</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Calling this will clear all values from the UPDATE statement. </td></tr></table>
+      </div>
+      <h4 class="dtH4">Protected Instance Fields</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._aggregateParameters.html">_aggregateParameters</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._countAll.html">_countAll</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._countAllAlias.html">_countAllAlias</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._distinct.html">_distinct</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._entity.html">_entity</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._groupBy.html">_groupBy</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._insertColumns.html">_insertColumns</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._insertColumnValues.html">_insertColumnValues</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._insertParameters.html">_insertParameters</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._orderBy.html">_orderBy</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._parameterValues.html">_parameterValues</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._resultColumns.html">_resultColumns</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._topN.html">_topN</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._updateColumns.html">_updateColumns</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._whereParameters.html">_whereParameters</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protfield.gif"></img><a href="NCI.EasyObjects.DynamicQuery._withRollup.html">_withRollup</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Used by derived classes </td></tr></table>
+      </div>
+      <h4 class="dtH4">Protected Instance Properties</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.AliasFormat.html">AliasFormat</a></td><td width="50%">
+            Gets the string format used to delimit aliases for the Sql Database.
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.DynamicQueryProviderData.html">DynamicQueryProviderData</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Gets the <a href="NCI.EasyObjects.Configuration.DatabaseTypeData.html">DatabaseTypeData</a> from which this object was initialized. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.FieldFormat.html">FieldFormat</a></td><td width="50%">
+            Gets the string format used to delimit fieldnames for the Sql Database.
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.InsertColumns.html">InsertColumns</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Returns the current database columns in the INSERT clause </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.InsertColumnValues.html">InsertColumnValues</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Returns the current database columns in the INSERT clause </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.OrderBy.html">OrderBy</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Returns the current database columns in the ORDER BY clause </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.ParameterToken.html">ParameterToken</a></td><td width="50%">
+            Gets the parameter token used to delimit parameters for the Sql Database.
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.ParameterValues.html">ParameterValues</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Returns the current values for the WHERE clause </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.QuerySourceWithSchema.html">QuerySourceWithSchema</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">
+            Gets the complete querysource name (including schema) properly formatted for the current SQL dialect.
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.ResultColumns.html">ResultColumns</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Returns the current database columns in the SELECT clause </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.SchemaSeparator.html">SchemaSeparator</a></td><td width="50%">
+            Gets the string format used to separate schema names and database objects for the Sql Database.
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.TableNameWithSchema.html">TableNameWithSchema</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%">
+            Gets the complete table name (including schema) properly formatted for the current SQL dialect.
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protproperty.gif"></img><a href="NCI.EasyObjects.DynamicQuery.UpdateColumns.html">UpdateColumns</a> (inherited from <b>DynamicQuery</b>)</td><td width="50%"> Returns the current database columns in the UPDATE clause </td></tr></table>
+      </div>
+      <h4 class="dtH4">Protected Instance Methods</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.BuildDeleteQuery.html">BuildDeleteQuery</a></td><td width="50%"> Builds a provider-specific DELETE query against the <a href="NCI.EasyObjects.EasyObject.TableName.html">TableName</a>. <seealso cref="P:NCI.EasyObjects.EasyObject.TableName"></seealso>
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.BuildInsertQuery.html">BuildInsertQuery</a></td><td width="50%"> Builds a provider-specific INSERT query against the <a href="NCI.EasyObjects.EasyObject.TableName.html">TableName</a>. <seealso cref="P:NCI.EasyObjects.EasyObject.TableName"></seealso>
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.BuildSelectQuery.html">BuildSelectQuery</a></td><td width="50%"> Builds a provider-specific SELECT query against the <a href="NCI.EasyObjects.EasyObject.QuerySource.html">QuerySource</a>. <seealso cref="P:NCI.EasyObjects.EasyObject.QuerySource"></seealso>
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.BuildUpdateQuery.html">BuildUpdateQuery</a></td><td width="50%"> Builds a provider-specific UPDATE query against the <a href="NCI.EasyObjects.EasyObject.TableName.html">TableName</a>. <seealso cref="P:NCI.EasyObjects.EasyObject.TableName"></seealso>
+            </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.BuildWhereClause.html">BuildWhereClause</a></td><td width="50%"> Construct the correct WHERE clause using the Transact-SQL syntax (generic SQL Server) </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassFinalizeTopic.asp">Finalize</a> (inherited from <b>Object</b>)</td><td width="50%">
+        Allows an <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassTopic.asp">Object</a> to attempt to free resources and perform other cleanup operations before the <b>Object</b> is reclaimed by garbage collection.
+      </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.GetAggregate.html">GetAggregate</a></td><td width="50%"> Builds the provider-specific aggregate portion of the query </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassMemberwiseCloneTopic.asp">MemberwiseClone</a> (inherited from <b>Object</b>)</td><td width="50%">
+        Creates a shallow copy of the current <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassTopic.asp">Object</a>.
+      </td></tr></table>
+      </div>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.html">SqlServerDynamicQuery Class</a> | <a href="NCI.EasyObjects.DynamicQueryProvider.html">NCI.EasyObjects.DynamicQueryProvider Namespace</a></p>
+      <hr />
+      <div id="footer">
+        <p>
+          <a>Copyright (c) 2005 Noonan Consulting Inc. All rights reserved.</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

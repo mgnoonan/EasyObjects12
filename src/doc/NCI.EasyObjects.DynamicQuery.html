@@ -1,0 +1,102 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>DynamicQuery Class</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">EasyObjects.NET Programmers Reference</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">DynamicQuery Class</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p> DynamicQuery allows you to build provider independent dynamic queries against the database from outside your data layer. All selection criteria are passed in via Parameters in order to prevent sql injection techniques often attempted by hackers. </p>
+      <p>For a list of all members of this type, see <a href="NCI.EasyObjects.DynamicQueryMembers.html">DynamicQuery Members</a>.</p>
+      <p>
+        <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassTopic.asp">System.Object</a>
+        <br />   Microsoft.Practices.EnterpriseLibrary.Configuration.ConfigurationProvider<br />      <b>NCI.EasyObjects.DynamicQuery</b><br />         <a href="NCI.EasyObjects.DynamicQueryProvider.OracleDynamicQuery.html">NCI.EasyObjects.DynamicQueryProvider.OracleDynamicQuery</a><br />         <a href="NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery.html">NCI.EasyObjects.DynamicQueryProvider.SqlServerDynamicQuery</a></p>
+      <div class="syntax">
+        <div>public abstract class DynamicQuery<b> : <a href="Microsoft.Practices.EnterpriseLibrary.Configuration.ConfigurationProvider.html">ConfigurationProvider</a></b></div>
+      </div>
+      <H4 class="dtH4">Thread Safety</H4>
+      <P>Public static (<b>Shared</b> in Visual Basic) members of this type are 
+				safe for multithreaded operations. Instance members are <b>not</b> guaranteed to be 
+				thread-safe.</P>
+      <h4 class="dtH4">Example</h4>
+      <p> VB.NET <pre class="code">Dim emps As New Employees
+
+' LastNames that have "A" anywher in them
+emps.Where.LastName.Value = "%A%"
+emps.Where.LastName.Operator = WhereParameter.Operand.Like_
+
+' Only return the EmployeeID and LastName
+emps.Query.AddResultColumn(EmployeesSchema.EmployeeID)
+emps.Query.AddResultColumn(EmployeesSchema.LastName)
+
+' Order by LastName 
+' (you can add as many order by columns as you like by repeatedly calling this)
+emps.Query.AddOrderBy(EmployeesSchema.LastName, WhereParameter.Dir.ASC)
+
+' Bring back only distinct rows
+emps.Query.Distinct = True
+
+' Bring back the top 10 rows
+emps.Query.TopN = 10
+
+emps.Query.Load()</pre> C# <pre class="code">Employees emps = new Employees();
+
+// LastNames that have "A" anywher in them
+emps.Where.LastName.Value = "%A%";
+emps.Where.LastName.Operator = WhereParameter.Operand.Like;
+
+// Only return the EmployeeID and LastName
+emps.Query.AddResultColumn(EmployeesSchema.EmployeeID);
+emps.Query.AddResultColumn(EmployeesSchema.LastName);
+
+// Order by LastName 
+// (you can add as many order by columns as you like by repeatedly calling this)
+emps.Query.AddOrderBy(EmployeesSchema.LastName, WhereParameter.Dir.ASC);
+
+// Bring back only distinct rows
+emps.Query.Distinct = true;
+
+// Bring back the top 10 rows
+emps.Query.TopN = 10;
+
+emps.Query.Load();</pre>
+            </p>
+      <h4 class="dtH4">Requirements</h4>
+      <p>
+        <b>Namespace: </b>
+        <a href="NCI.EasyObjects.html">NCI.EasyObjects</a>
+      </p>
+      <p>
+        <b>Assembly: </b>NCI.EasyObjects (in NCI.EasyObjects.dll)
+					</p>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="NCI.EasyObjects.DynamicQueryMembers.html">DynamicQuery Members</a> | <a href="NCI.EasyObjects.html">NCI.EasyObjects Namespace</a></p>
+      <hr />
+      <div id="footer">
+        <p>
+          <a>Copyright (c) 2005 Noonan Consulting Inc. All rights reserved.</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

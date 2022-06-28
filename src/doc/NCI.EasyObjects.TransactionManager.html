@@ -1,0 +1,91 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>TransactionManager Class</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">EasyObjects.NET Programmers Reference</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">TransactionManager Class</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>
+            <b>TransactionManager</b> is used to seemlessly enroll an EasyObject into a transaction. <b>TransactionManager</b> uses ADO.NET transactions and therefore is not a distributed transaction as you would get with COM+. You only have to use <b>TransactionManager</b> if two or more EasyObjects need to be saved as a transaction. The EasyObject.Save method is already protected by a transaction. <seealso cref="M:NCI.EasyObjects.EasyObject.Save(System.Data.CommandType)"></seealso>
+            </p>
+      <p>For a list of all members of this type, see <a href="NCI.EasyObjects.TransactionManagerMembers.html">TransactionManager Members</a>.</p>
+      <p>
+        <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpref/html/frlrfSystemObjectClassTopic.asp">System.Object</a>
+        <br />   <b>NCI.EasyObjects.TransactionManager</b></p>
+      <div class="syntax">
+        <div>public class TransactionManager</div>
+      </div>
+      <H4 class="dtH4">Thread Safety</H4>
+      <P>Public static (<b>Shared</b> in Visual Basic) members of this type are 
+				safe for multithreaded operations. Instance members are <b>not</b> guaranteed to be 
+				thread-safe.</P>
+      <h4 class="dtH4">Remarks</h4>
+      <p> Transaction Rules: <ul type="disc"><li>Your transactions paths do not have to be pre-planned. At any time you can begin a transaction</li><li>You can nest BeginTransaction/CommitTransaction any number of times as long as they are sandwiched appropriately</li><li>Once RollbackTransaction is called the transaction is doomed, nothing can be committed even it is attempted.</li><li>Transactions are stored in the Thread Local Storage.</li></ul> Transactions are stored in the Thread Local Storage or TLS. This way the API isn't intrusive, ie, forcing you to pass a Connection around everywhere. There is one thing to remember, once you call <a href="NCI.EasyObjects.TransactionManager.RollbackTransaction.html">RollbackTransaction</a> you will be unable to commit anything on that thread until you call <a href="NCI.EasyObjects.TransactionManager.ThreadTransactionMgrReset.html">ThreadTransactionMgrReset</a>(). In an ASP.NET application each page is handled by a thread that is pulled from a thread pool. Thus, you need to clear out the TLS (thread local storage) before your page begins execution. The best way to do this is to create a base page that inhertis from System.Web.UI.Page and clears the state like this: </p>
+      <h4 class="dtH4">Example</h4>
+      <p> VB.NET <pre class="code">Dim tx As TransactionManager = TransactionManager.ThreadTransactionMgr()
+
+Try
+    tx.BeginTransaction()
+    emps.Save()
+    prds.Save()
+    tx.CommitTransaction()
+Catch ex As Exception
+    tx.RollbackTransaction()
+    tx.ThreadTransactionMgrReset()
+End Try
+</pre> C# <pre class="code">TransactionManager tx = TransactionManager.ThreadTransactionMgr();
+
+try
+{
+    tx.BeginTransaction();
+    emps.Save();
+    prds.Save();
+    tx.CommitTransaction();
+}
+catch(Exception ex)
+{
+    tx.RollbackTransaction();
+    tx.ThreadTransactionMgrReset();
+}
+</pre>
+            </p>
+      <h4 class="dtH4">Requirements</h4>
+      <p>
+        <b>Namespace: </b>
+        <a href="NCI.EasyObjects.html">NCI.EasyObjects</a>
+      </p>
+      <p>
+        <b>Assembly: </b>NCI.EasyObjects (in NCI.EasyObjects.dll)
+					</p>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="NCI.EasyObjects.TransactionManagerMembers.html">TransactionManager Members</a> | <a href="NCI.EasyObjects.html">NCI.EasyObjects Namespace</a> | <a href="NCI.EasyObjects.EasyObject.Save_overload_2.html">Save</a></p>
+      <hr />
+      <div id="footer">
+        <p>
+          <a>Copyright (c) 2005 Noonan Consulting Inc. All rights reserved.</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

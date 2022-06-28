@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EasyObjectsQuickStart", "EasyObjectsQuickStart.vbproj", "{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PostBuildEvents", "PostBuildEvents.vbproj", "{48500409-9A91-44A0-B11B-CF8575F3F780}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		DebugLongRunningTests = DebugLongRunningTests
+		DebugUnitTests = DebugUnitTests
+		Release = Release
+		ReleaseFinal = ReleaseFinal
+		ReleaseUnitTests = ReleaseUnitTests
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}.Debug.ActiveCfg = Debug|.NET
+		{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}.Debug.Build.0 = Debug|.NET
+		{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}.DebugLongRunningTests.ActiveCfg = Debug|.NET
+		{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}.DebugLongRunningTests.Build.0 = Debug|.NET
+		{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}.DebugUnitTests.ActiveCfg = Debug|.NET
+		{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}.DebugUnitTests.Build.0 = Debug|.NET
+		{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}.Release.ActiveCfg = Release|.NET
+		{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}.Release.Build.0 = Release|.NET
+		{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}.ReleaseFinal.ActiveCfg = Release|.NET
+		{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}.ReleaseFinal.Build.0 = Release|.NET
+		{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}.ReleaseUnitTests.ActiveCfg = Release|.NET
+		{1C8ABE6A-D43D-4971-83B2-CA7C9CEAC10F}.ReleaseUnitTests.Build.0 = Release|.NET
+		{48500409-9A91-44A0-B11B-CF8575F3F780}.Debug.ActiveCfg = Debug|.NET
+		{48500409-9A91-44A0-B11B-CF8575F3F780}.Debug.Build.0 = Debug|.NET
+		{48500409-9A91-44A0-B11B-CF8575F3F780}.DebugLongRunningTests.ActiveCfg = Debug|.NET
+		{48500409-9A91-44A0-B11B-CF8575F3F780}.DebugLongRunningTests.Build.0 = Debug|.NET
+		{48500409-9A91-44A0-B11B-CF8575F3F780}.DebugUnitTests.ActiveCfg = Debug|.NET
+		{48500409-9A91-44A0-B11B-CF8575F3F780}.DebugUnitTests.Build.0 = Debug|.NET
+		{48500409-9A91-44A0-B11B-CF8575F3F780}.Release.ActiveCfg = Release|.NET
+		{48500409-9A91-44A0-B11B-CF8575F3F780}.Release.Build.0 = Release|.NET
+		{48500409-9A91-44A0-B11B-CF8575F3F780}.ReleaseFinal.ActiveCfg = Release|.NET
+		{48500409-9A91-44A0-B11B-CF8575F3F780}.ReleaseFinal.Build.0 = Release|.NET
+		{48500409-9A91-44A0-B11B-CF8575F3F780}.ReleaseUnitTests.ActiveCfg = Release|.NET
+		{48500409-9A91-44A0-B11B-CF8575F3F780}.ReleaseUnitTests.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

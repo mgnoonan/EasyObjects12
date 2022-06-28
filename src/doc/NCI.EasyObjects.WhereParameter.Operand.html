@@ -1,0 +1,75 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>WhereParameter.Operand Enumeration</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">EasyObjects.NET Programmers Reference</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">WhereParameter.Operand Enumeration</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p> The type of comparison this parameter should use </p>
+      <div class="syntax">
+        <div>public enum WhereParameter.Operand</div>
+      </div>
+      <h4 class="dtH4">Remarks</h4>
+      <p>Some database providers may not support all Operands.</p>
+      <h4 class="dtH4">Members</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Member Name</th>
+            <th width="50%">Description</th>
+          </tr>
+<tr valign="top"><td><b>Equal</b></td><td> Equal Comparison </td></tr>
+<tr valign="top"><td><b>NotEqual</b></td><td> Not Equal Comparison </td></tr>
+<tr valign="top"><td><b>GreaterThan</b></td><td> Greater Than Comparison </td></tr>
+<tr valign="top"><td><b>GreaterThanOrEqual</b></td><td> Greater Than or Equal Comparison </td></tr>
+<tr valign="top"><td><b>LessThan</b></td><td> Less Than Comparison </td></tr>
+<tr valign="top"><td><b>LessThanOrEqual</b></td><td> Less Than or Equal Comparison </td></tr>
+<tr valign="top"><td><b>Like</b></td><td> Like Comparison, "%s%" does it have an 's' in it? "s%" does it begin with 's'? </td></tr>
+<tr valign="top"><td><b>IsNull</b></td><td> Is the value null in the database </td></tr>
+<tr valign="top"><td><b>IsNotNull</b></td><td> Is the value non-null in the database </td></tr>
+<tr valign="top"><td><b>Between</b></td><td> Is the value between two parameters? see <a href="NCI.EasyObjects.WhereParameter.BetweenBeginValue.html">BetweenBeginValue</a> and <a href="NCI.EasyObjects.WhereParameter.BetweenEndValue.html">BetweenEndValue</a>. Note that Between can be for other data types than just dates. </td></tr>
+<tr valign="top"><td><b>In</b></td><td> Is the value in a list, ie, "4,5,6,7,8" </td></tr>
+<tr valign="top"><td><b>NotIn</b></td><td> NOT in a list, ie not in, "4,5,6,7,8" </td></tr>
+<tr valign="top"><td><b>NotLike</b></td><td> Not Like Comparison, "%s%", anything that does not it have an 's' in it. </td></tr></table>
+      </div>
+      <h4 class="dtH4">Requirements</h4>
+      <p>
+        <b>Namespace: </b>
+        <a href="NCI.EasyObjects.html">NCI.EasyObjects</a>
+      </p>
+      <p>
+        <b>Assembly: </b>NCI.EasyObjects (in NCI.EasyObjects.dll)
+					</p>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="NCI.EasyObjects.html">NCI.EasyObjects Namespace</a>
+      </p>
+      <hr />
+      <div id="footer">
+        <p>
+          <a>Copyright (c) 2005 Noonan Consulting Inc. All rights reserved.</a>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
